@@ -1,3 +1,5 @@
+TODO:
+
 Frontend
 - Wireframe a new UI
 - Implement new UI
@@ -7,6 +9,10 @@ Backend
 - do a test deploy, and set up update tooling on server
 
 Logic
+- Implement cropping,centering,normalization and some smarter calc logic
+
+DONE:
 - Check dataset for images, and see if model is overtrained
   - If model is overtrained, make new model and retrain
-- Implement cropping,centering,normalization and some smarter calc logic
+  * Yes, model is probably overtrained, but retraining properly will need a lot 
+    of effort at this point. Push back.

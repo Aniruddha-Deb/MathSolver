@@ -12,7 +12,7 @@ function main() {
 function clear_canvas() {
 	canvas.clear();
 	canvas.backgroundColor = "#fff"
-
+	document.getElementById("answer").innerHTML = "="
 }
 
 function calculate() {
@@ -23,7 +23,7 @@ function calculate() {
 
 	xhr.onreadystatechange = function() { 
 		if (xhr.readyState == 4 && xhr.status == 200)
-			document.getElementById("answer").innerHTML = xhr.responseText
+			document.getElementById("answer").innerHTML = "="+xhr.responseText
 	}
 	xhr.send("img="+encodeURIComponent(img.substr(22)));
 }
